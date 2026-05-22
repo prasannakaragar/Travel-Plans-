@@ -573,17 +573,19 @@ const Register = () => {
                   >
                     <div id="google-signin-btn" />
                     <Button
-                      variant="outlined"
                       onClick={() => handleOpenSocial("facebook")}
+                      variant="outlined"
                       startIcon={<FacebookIcon />}
-                      disabled
                       sx={{
                         borderRadius: 2,
                         py: 1,
                         width: isMobile ? 280 : 360,
                         color: "#4267B2",
                         borderColor: "#4267B2",
-                        opacity: 0.5,
+                        "&:hover": {
+                          backgroundColor: "rgba(66, 103, 178, 0.08)",
+                          borderColor: "#4267B2",
+                        },
                       }}
                     >
                       Facebook

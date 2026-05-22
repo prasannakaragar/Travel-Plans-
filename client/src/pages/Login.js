@@ -404,14 +404,16 @@ const Login = () => {
                 <div id="google-signin-btn" />
                 <Box sx={{ display: "flex", gap: 2 }}>
                   <IconButton
-                    disabled
+                    onClick={() => handleOpenSocial("facebook")}
                     sx={{
                       border: "1px solid",
                       borderColor: "divider",
                       borderRadius: 2,
                       p: 1.5,
                       color: "#4267B2",
-                      opacity: 0.5,
+                      "&:hover": {
+                        backgroundColor: "rgba(66, 103, 178, 0.08)",
+                      },
                     }}
                   >
                     <FacebookIcon />
